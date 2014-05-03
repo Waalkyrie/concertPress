@@ -1,3 +1,4 @@
+//fiwed the issue with wordpress 3.9
 jQuery( function( $ ) {
 
 	var rpsCP = {
@@ -1396,7 +1397,7 @@ jQuery( function( $ ) {
 			}
 
 			// If the venue select list has been appended to the DOM
-			if( dis.event.$venueSelect.length && dis.event.$venueSelect.val() != '' ) {
+			if( dis.event.$venueSelect.length && dis.event.$venueSelect.val() != null ) {
 
 				// If the venue select list has been used, set our flag
 				data.venueSelectFlag = 1;
@@ -1419,7 +1420,7 @@ jQuery( function( $ ) {
 
 
 			// If the prog select list has been appended to the DOM
-			if( dis.event.$progSelect.length && dis.event.$progSelect.val() != '' ) {
+			if( dis.event.$progSelect.length && dis.event.$progSelect.val() != null ) {
 
 				// The select menu was used
 				data.progSelectFlag = 1;
